@@ -7,7 +7,7 @@ $per_page = 20;
 
 echo '
     <div id="input-area">
-    <form method="post" action="list.php">
+    <form method="post" action="books.php">
         <label>Title:</label>
         <input type="text" name="title">
         
@@ -82,7 +82,7 @@ for ($i = 1; $i <= $pages; $i++)
     }
     else
     {
-        $link = "<a href=list.php?page=$i";
+        $link = "<a href=books.php?page=$i";
         if($category_id)
             $link .= "&cat=$category_id";
         else if($author_id)
@@ -134,7 +134,7 @@ for ($i = $start; $i < $end; $i++)
         $first = $arow['first_name'];
         $last = $arow['last_name'];
         $id = $arow['id'];        
-        echo "<a href=list.php?page=1&aut=$id>";
+        echo "<a href=books.php?page=1&aut=$id>";
         if (strcmp($first,$last) != 0)
             echo $first . " " . $last;
         else
@@ -159,7 +159,7 @@ for ($i = $start; $i < $end; $i++)
         $crow = $cres->fetch_array();
         $name = $crow['name'];
         $id = $crow['id']; 
-        echo "<a href=list.php?page=1&cat=$id>";
+        echo "<a href=books.php?page=1&cat=$id>";
         echo $name;
         echo "</a>";
         if ($j < $cres->num_rows-1)

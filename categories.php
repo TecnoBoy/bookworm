@@ -30,7 +30,7 @@ function print_tree($tree)
             $name = $node['category']['name'];
             $id = $node['category']['id'];
             echo "<li>";
-            echo "<a href=list.php?cat=$id>" . $name . "</a>";
+            echo "<a href=books.php?cat=$id>" . $name . "</a>";
             print_tree($node['children']);
             echo "</li>";
         }

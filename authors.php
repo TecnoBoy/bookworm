@@ -83,7 +83,7 @@ for ($i = $start; $i < $end; $i++)
     $name = $row['first_name'] . " " . $row['last_name'];
 
     echo "<td>";
-    echo "<a href=list.php?aut=$author_id>" . $name . "</a>";
+    echo "<a href=books.php?aut=$author_id>" . $name . "</a>";
     echo "</td>";
 
     $sql = "SELECT * FROM books_authors WHERE books_authors.author_id=$author_id";

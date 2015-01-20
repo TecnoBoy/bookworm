@@ -41,7 +41,7 @@ echo "<br><br>";
 
 $image = htmlspecialchars($brow['image'], ENT_QUOTES);
 
-echo "<img src='books/$image' width=200 height=280/><br><br>";
+echo "<img src='$config->books_path/$image' width=200 height=280/><br><br>";
 
 // Categories
 
@@ -123,7 +123,7 @@ echo "</br>";
 if ($_SESSION['login']==1 && $brow['file'] != NULL)
 {
     $filename = $brow['file'];
-    $filepath = "books/" . $filename;
+    $filepath = $config->books_path . "/" . $filename;
     $size = filesize($filepath);
     $filepath = htmlspecialchars($filepath, ENT_QUOTES);
 
@@ -139,7 +139,6 @@ if ($_SESSION['login']==1 && $brow['file'] != NULL)
     {
         printf("name: %s<br>", $filepath);
         $downlink = preg_replace("/ /", "+", $filepath);
-       // $downlink = urlencode("$filepath");
         $downlink = "download.php?filepath=" . $downlink;
         echo "<a href=$downlink>Download</a>";
         echo " (" . $size . ")" . "<br>";

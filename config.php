@@ -8,7 +8,9 @@ class config
     public $password = "pass";
     // database name
     public $dbname = "bookworm";
-    public $file = "bookworm.conf";
+    public $file = "config.ini";
+    // relative path from bookworm directory
+    public $books_path = "books";
 }
 
 $config = new config;
@@ -19,6 +21,8 @@ if (file_exists($config->file))
     $config->username = $ini_array["username"];
     $config->password = $ini_array["password"];
     $config->dbname = $ini_array["dbname"];
+
+    $config->books_path = $ini_array["books_path"];    
 }
 
 ?>
