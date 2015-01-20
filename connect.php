@@ -5,6 +5,7 @@ $mysqli = new mysqli($config->hostname, $config->username,
 if (mysqli_connect_errno())
 {
     die("Error: " . mysqli_connect_error());
+   // header("Location: fatal.php");
 }
 
 ?>
