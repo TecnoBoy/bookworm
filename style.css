@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 62.5%;
+    font-family: Helvetica, sans-serif;
+}
+
+#page-wrap {
+    background: lightyellow;
+    width: 660px;
+    padding: 20px 50px 20px 50px;
+    margin: 20px auto;
+    min-height: 500px;
+    height: auto !important;
+    height: 500px;
+    font-size: 1.4em;
+}
+
+a:link {
+    color: #666;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #999999;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:active, a:hover {
+    color: #bd5a35;
+    text-decoration: underline;
+}
+
+
+ul > li {
+    margin-left: 50px;
+}
+
+ul#menu {
+    font-size: 1.2em;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul#menu li {
+    display: block;
+    float: left;
+    background: #eaebec;
+    text-shadow: 1px 1px 0px #fff;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 5px;
+}
+
+table {
+    color: #666; 
+    font-size: 12px;
+    font-family: Helvetica, sans-serif;
+    text-shadow: 1px 1px 0px #fff;
+    background: #eaebec;
+    margin: 20px;
+    border: #ccc 1px solid;
+
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+
+    -mox-box-shadow: 0 1px 2px #d1d1d1;
+    -webkit-box-shadow: 0 1px 2px #d1d1d1;
+    box-shadow: 0 1px 2px #d1d1d1;
+}
+
+table th {
+    padding: 21px 25px 22px 25px;
+    border-top: 1px solid #fafafa;
+    border-bottom: 1px solid #e0e0e0;
+
+    background: -webkit-gradient(linear, left, top, left bottom, from(#ededed), to(#ebebeb));
+    background: -moz-linear-gradient(top, #ededed, #ebebeb);
+}
+
+table th:first-child {
+    text-align: left;
+    padding-left: 20px;
+}
+
+table tr:first-child th:last-child {
+    -moz-border-radius-topleft:3px;
+    -webkit-border-top-left-radius: 3px;
+    border-top-left-radius: 3px;
+}
+
+table tr:first-child th:last-child {
+    -moz-border-radius-topright:3px;
+    -webkit-border-top-right-radius:3px;
+    border-top-right-radius: 3px;
+}
+
+table tr {
+    text-align: center;
+    padding-left: 20px;
+}
+
+table td:first-child {
+    text-align: left;
+    padding-left: 20px;
+    border-left: 0;
+}
+
+table td {
+    padding: 10px;
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+    border-left: 1px solid #e0e0e0;
+    background: #efefef;
+}
+
+label {
+    float: left;
+    text-align: right;
+    margin-right: 15px;
+    width: 100px;
+    padding-top: 5px;
+}
+
+#input-area {
+    width: 600px;
+    margin-top: 25px;
+}
+
+#input-area input, #input-area select {
+    padding: 5px;
+    width: 471px;
+    font-family: Helvetica, sans-serif;
+    margin: 0px 0px 10px 0px;
+    border: 2px solid #ccc;
+}
+
+#input-area input:focus {
+    border: 2px solid #900;
+}
+
+#input-area input.submit-button {
+    width: 100px;
+    float: right;
+}

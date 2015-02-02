@@ -1,0 +1,6 @@
+# bookworm
+
+Simple virtual library manager
+
+1) Generate the database and table structures via "bookworm.sql" 
+2) Modify the mysql connection parameters and some options in "config.ini" 

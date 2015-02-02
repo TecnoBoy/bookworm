@@ -46,7 +46,7 @@ else if ($_GET['aut'])
     $author_id = $_GET['aut'];
     $sql = "SELECT * FROM books INNER JOIN 
                 (SELECT books_authors.book_id FROM books_authors 
-                INNER JOIN authors ON books_authors.author_id=authors.id 
+                INNER JOIN authors ON books_authors.author_id=authors.id
                 WHERE author_id=".mysql_real_escape_string($author_id).") res 
             ON books.id=res.book_id";
 }
