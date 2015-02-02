@@ -20,7 +20,7 @@ echo '
 if ($_POST['first_name'] or $_POST['last_name'])
 {
     $first_name = mysql_real_escape_string($_POST['first_name']);
-	$last_name = mysql_real_escape_string($_POST['last_name']);
+    $last_name = mysql_real_escape_string($_POST['last_name']);
     $sql = "SELECT * FROM authors WHERE first_name LIKE '%$first_name%' AND last_name LIKE '%$last_name%'";
 }
 else
